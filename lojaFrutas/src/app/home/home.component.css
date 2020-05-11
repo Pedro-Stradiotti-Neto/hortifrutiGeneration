@@ -1,0 +1,12 @@
+main {
+    background-image: url("https://www.tradeforce.com.br/wp-content/uploads/hortifruti.jpg");
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h2 {
+    font-size: 40px;
+}

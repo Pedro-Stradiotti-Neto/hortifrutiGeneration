@@ -1,0 +1,28 @@
+<div class="container mt-3">
+    <div class="row">
+        <div class="col-md-4 mt-4">
+            <img src={{fruta.imagem}} alt="Imagem da Fruta" class="img-fluid">
+        </div>
+
+        <div class="col-md-8">
+            <div class="card mt-5">
+                <div class="card-header">
+                    {{fruta.nome}}
+                </div>
+                <div class="card-body">
+                    {{fruta.preco}}
+                </div>
+            </div>
+
+            <hr>
+
+            <h3 class="text-center text-monospace mt-5 mb-5">Tem certeza que deseja apagar esse produto?</h3>
+
+            <div class="row d-flex justify-content-center mb-5">
+                <button class="btn btn-outline-success mr-3" (click)='btnSim()'>SIM</button>
+                <button class="btn btn-outline-danger" (click)="btnNao()">NÃO</button>
+            </div>
+
+        </div>
+    </div>
+</div>

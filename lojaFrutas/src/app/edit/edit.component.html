@@ -1,0 +1,37 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h2 class="text-center text-monospace">Editar produto</h2>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4">
+            <img src={{fruta.imagem}} alt="Imagem da Fruta" class="img-fluid">
+        </div>
+
+        <form class="col-md-8 my-5">
+            <div class="form-group">
+                <label for="name">Nome :</label>
+                <input type="text" class="form-control" name="nome" id="nome" [(ngModel)]="fruta.nome">
+            </div>
+            <div class="form-group">
+                <label for="price">Preço :</label>
+                <input type="text" class="form-control" name="preco" id="price" [(ngModel)]="fruta.preco">
+            </div>
+            <div class="form-group">
+                <label for="image">Imagem :</label>
+                <input type="text" class="form-control" name="imagem" id="image" [(ngModel)]="fruta.imagem">
+            </div>
+            <div class="form-group">
+                <label for="quant">Quantidade em estoque :</label>
+                <input type="text" class="form-control" name="qtdEstoque" id="quant" [(ngModel)]="fruta.qtdEstoque">
+            </div>
+
+            <div class="d-flex justify-content-end">
+                <button type="submit" class="btn btn-outline-primary" (click)="salvar()">Salvar</button>
+            </div>
+        </form>
+
+    </div>
+</div>
